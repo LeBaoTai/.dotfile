@@ -60,6 +60,7 @@ if status is-interactive
 
     # Editor
     alias nvi="nvim"
+    alias gvi="goneovim"
     ## SETTING THE STARSHIP PROMPT ###
     # ~/.config/fish/config.fish
     starship init fish | source
