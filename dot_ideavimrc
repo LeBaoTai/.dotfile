@@ -1,0 +1,129 @@
+" .ideavimrc is a configuration file for IdeaVim plugin. It uses
+"   the same commands as the original .vimrc configuration.
+" You can find a list of commands here: https://jb.gg/h38q75
+" Find more examples here: https://jb.gg/share-ideavimrc
+
+
+"" -- Suggested options --
+" Show a few lines of context around the cursor. Note that this makes the
+" text scroll if you mouse-click near the start or end of the window.
+set scrolloff=5
+
+set nu
+set relativenumber
+
+" Do incremental searching.
+set incsearch
+set which-key
+
+let mapleader = " "
+
+set notimeout
+
+" Don't use Ex mode, use Q for formatting.
+map Q gq
+
+" --- Enable IdeaVim plugins https://jb.gg/ideavim-plugins
+
+"mapping"
+" searching
+map <leader>se <Action>(SearchEverywhere)
+
+"find
+map <leader>fr <Action>(FindInPath)
+
+"floating
+map <leader>fe <Action>(Floating.CodeToolbar.Extract)
+map <leader>fs <Action>(Floating.CodeToolbar.Surround)
+
+"new
+map <leader>fc <Action>(NewClass)
+map <leader>fn <Action>(NewFile)
+
+"go
+map <leader>gd <Action>(GotoDeclaration)
+map <leader>gf <Action>(GotoFile)
+map <leader>gi <Action>(GotoImplementation)
+map <leader>gc <Action>(GotoClass)
+
+"close
+map <leader>ct <Action>(CloseContent)
+map <leader>cae <Action>(CloseAllEditors)
+map <leader>car <Action>(CloseAllToTheRight)
+map <leader>cao <Action>(CloseAllEditorsButActive)
+
+"hide
+map <leader>ha <Action>(HideActiveWindow)
+
+"project
+map <leader>pt <Action>(ShowProjectStructureSettings)
+
+"active
+map <leader>ft <Action>(ActivateProjectToolWindow)
+map <leader>atd <Action>(ActivateTODOToolWindow)
+map <leader>att <Action>(ActivateTerminalToolWindow)
+map <leader>ag <Action>(ActivateVersionControlToolWindow)
+map <leader>ar <Action>(ActivateRunToolWindow)
+map <leader>ap <Action>(ActivateProblemsViewToolWindow)
+map <leader>as <Action>(ActivateServicesToolWindow)
+
+"code
+map <leader>co <Action>(OptimizeImports)
+map <leader>cgc <Action>(GenerateConstructor)
+map <leader>cgo <Action>(OverrideMethods)
+map <leader>cgi <Action>(ImplementMethods)
+map <leader>cga <Action>(GenerateGetterAndSetter)
+map <leader>cgt <Action>(Actions.ActionsPlugin.GenerateToString)
+
+"refactor
+map <leader>rn <Action>(RenameElement)
+map <leader>rm <Action>(Move)
+
+"edit
+map <leader>ec <Action>(editRunConfigurations)
+map <leader>ea <Action>(EditSmartGroup)
+
+"tab
+map <leader>tl <Action>(MoveTabRight)
+map <leader>tj <Action>(MoveTabDown)
+map <leader>tp <Action>(PinActiveEditorTab)
+
+"line
+map <A-j> <Action>(MoveLineDown)
+map <A-k> <Action>(MoveLineUp)
+
+"undo
+map <leader>us <Action>(Unsplit)
+
+"toggle
+map <leader>tc <Action>(EditorToggleCase)
+map <leader>tb <Action>(ToggleBookmark)
+map <leader>ta <Action>(Annotate)
+
+"quick
+map <leader>qj <Action>(QuickJavaDoc)
+
+"formatting
+map <leader>rf <Action>(ReformatCode)
+
+"run
+map <leader>cr <Action>(Run)
+
+"Stop
+map <leader>cs <Action>(Stop)
+
+" Highlight copied text
+Plug 'machakann/vim-highlightedyank'
+" Commentary plugin
+Plug 'tpope/vim-commentary'
+
+
+"" -- Map IDE actions to IdeaVim -- https://jb.gg/abva4t
+"" Map \r to the Reformat Code action
+"map \r <Action>(ReformatCode)
+
+"" Map <leader>d to start debug
+"map <leader>d <Action>(Debug)
+
+"" Map \b to toggle the breakpoint on the current line
+"map \b <Action>(ToggleLineBreakpoint)

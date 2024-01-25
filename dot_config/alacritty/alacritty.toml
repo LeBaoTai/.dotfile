@@ -1,0 +1,36 @@
+import = ["/home/lbt/.config/alacritty/themes/cat-frappe.toml"]
+
+[cursor.style]
+blinking = "Always"
+shape = "Block"
+
+[env]
+TERM = "xterm-256color"
+
+[font]
+size = 10.0
+
+[font.bold]
+family = "Maple Mono NF"
+
+[font.bold_italic]
+family = "Maple Mono NF"
+
+[font.italic]
+family = "Maple Mono NF"
+
+[font.normal]
+family = "Maple Mono NF"
+style = "Light"
+
+
+[[keyboard.bindings]]
+action = "ToggleFullscreen"
+key = "F11"
+
+[scrolling]
+history = 50000
+
+[window]
+opacity = 1
+startup_mode = "Maximized"
