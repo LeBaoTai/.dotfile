@@ -1,4 +1,4 @@
-import = ["/home/lbt/.config/alacritty/themes/cat-frappe.toml"]
+import = ["/home/lbt/.config/alacritty/themes/palenight.toml"]
 
 [cursor.style]
 blinking = "Always"

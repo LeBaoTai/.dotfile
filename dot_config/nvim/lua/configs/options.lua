@@ -34,6 +34,7 @@ opt.undofile = true
 opt.undolevels = 10000
 opt.updatetime = 200 -- Save swap file and trigger CursorHold
 opt.wrap = false -- Disable line wrap
+opt.swapfile = false
 
 opt.fillchars = {
   foldopen = "",

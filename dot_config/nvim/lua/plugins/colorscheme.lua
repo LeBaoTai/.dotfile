@@ -1,10 +1,8 @@
 return {
-  -- "mcchrish/zenbones.nvim",
-  -- "n1ghtmare/noirblaze-vim",
-  "axvr/photon.vim",
-  -- dependencies = { "rktjmp/lush.nvim" },
+  "folke/tokyonight.nvim",
   priority = 1000,
-  config = function()
-      vim.cmd.colorscheme "photon"
+  opts = {},
+  config = function ()
+    vim.cmd('colorscheme tokyonight')
   end
 }

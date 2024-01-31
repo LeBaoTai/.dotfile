@@ -64,11 +64,11 @@ RestoreWindowGeometry = false
 ## In MacOS, 
 # FontFamily = "Monaco"
 ## In Linux
-FontFamily = "Maple Mono NF"
+FontFamily = "JetbrainsMono Nerd Font Thin"
 ## In Windows
 # FontFamily = "Windows"
 ## Fontsize is
-FontSize = 16
+FontSize = 14
 ## letterspace is
 # Letterspace = 0
 
@@ -125,7 +125,8 @@ HideMouseWhenTyping = true
 
 ## Draw built-in indent guide
 ## Enabling this setting will have a slight impact on performance.
-IndentGuide = true
+
+IdentGuide = true
 # IndentGuideIgnoreFtList = ["md"]
 # OptionsToUseGuideWidth = "tabstop"
 
@@ -319,7 +320,7 @@ IndentGuide = true
 ##  name: directoryname
 ##  full: /path/to/directoryname
 ##  minimum: /p/t/directoryname
-# PathStyle = "minimum"
+PathStyle = "full"
 
 ## Specifies whether the last exited session should be restored at the next startup.
 # RestoreSession = false
