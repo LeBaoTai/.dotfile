@@ -48,6 +48,9 @@ map('n', '<leader>l', '<cmd>Lazy<cr>')
 -- new file
 map('n', '<leader>fn', '<cmd>enew<cr>')
 
+-- open file lazy config
+map('n', '<leader>fc', '<cmd>e ~/.config/nvim/init.lua<cr>')
+
 -- windows
 map("n", "<leader>ww", "<C-W>p", { desc = "Other window", remap = true })
 map("n", "<leader>wd", "<C-W>c", { desc = "Delete window", remap = true })
