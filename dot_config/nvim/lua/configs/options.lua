@@ -11,7 +11,7 @@ opt.tabstop = 2 -- Number of spaces tabs count for
 opt.softtabstop = 2
 opt.shiftwidth = 2 -- Size of an indent
 opt.expandtab = true -- Use spaces instead of tabs
-opt.smartindent = false -- Insert indents automatically
+opt.smartindent = true -- Insert indents automatically
 
 opt.shiftround = true -- Round indent
 opt.autowrite = true -- Enable auto write

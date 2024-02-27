@@ -5,8 +5,12 @@ return {
     vim.keymap.set("n", "<leader>o", "<cmd>Outline<CR>", { desc = "Toggle Outline" })
     require("outline").setup {
       outline_window = {
+        -- Where to open the split window: right/left
         position = 'left',
-      },
+
+        -- Percentage or integer of columns
+        width = 5
+      }
     }
   end,
 }
